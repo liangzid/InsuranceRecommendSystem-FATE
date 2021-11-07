@@ -1,0 +1,12 @@
+
+<view class="main" style="min-height:{{winHeight}}rpx;">
+    <view class="wrap">
+        <view class="card-area">
+            <view class="main-text1">
+                <text>{{title}}</text>
+            </view>
+            <image class="image" src="../../images/simple.png"></image>
+            <button bindtap="downloadFile" type="primary">立即获取</button>
+        </view>
+    </view>
+</view>

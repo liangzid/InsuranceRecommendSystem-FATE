@@ -1,0 +1,68 @@
+{
+    "appid": "22917019",
+    "cloudfunctionRoot": "cloudfunctions/",
+    "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+    "compilation-args": {
+        "common": {},
+        "options": [],
+        "selected": -2
+    },
+    "condition": {
+        "conversation": {
+            "current": -1,
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "miniprogram": {
+            "current": 0,
+            "list": []
+        },
+        "plugin": {
+            "current": -1,
+            "list": []
+        },
+        "search": {
+            "current": -1,
+            "list": []
+        }
+    },
+    "host": "baiduboxapp",
+    "libVersion": "2.8.1",
+    "preview": {
+        "packageId": 797170
+    },
+    "projectname": "ai_law",
+    "publish": {
+        "version": "0.0.4"
+    },
+    "setting": {
+        "autoAudits": false,
+        "babelSetting": {
+            "disablePlugins": [],
+            "ignore": [],
+            "outputPath": ""
+        },
+        "checkInvalidKey": true,
+        "checkSiteMap": true,
+        "coverView": true,
+        "enhance": true,
+        "es6": true,
+        "minified": true,
+        "newFeature": true,
+        "postcss": true,
+        "scopeDataCheck": false,
+        "showShadowRootInWxmlPanel": true,
+        "uploadWithSourceMap": true,
+        "urlCheck": false
+    },
+    "simulatorPluginLibVersion": {},
+    "simulatorType": "wechat",
+    "swan": {
+        "baiduboxapp": {
+            "extensionJsVersion": "1.21.2",
+            "swanJsVersion": "3.360.23"
+        }
+    }
+}

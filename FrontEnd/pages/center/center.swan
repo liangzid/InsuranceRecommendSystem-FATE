@@ -1,0 +1,50 @@
+<!-- index.swan -->
+<view class="wrap">
+    <view class="card-area">
+        <view class="userinfo">
+        <view class="padding flex flex-wrap justify-between align-center bg-white">
+            <button class="cu-btn round" s-if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+            <view s-else class="userinfo-message">
+                <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+                <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+            </view>
+        </view>
+        </view>
+    </view>
+    <!-- <view>
+        <view class="solid-bottom text-xs padding">
+            text class="text-gray">如果您遇到了家暴等严重婚姻问题,请联系我们。</text>
+        </view>
+    </view> -->
+    <view class="cu-list menu {{menuBorder?'sm-border':''}}  {{menuCard?'card-menu margin-top':''}}">
+       <view class="cu-item {{menuArrow?'arrow':''}}">
+      <navigator class="content" hover-class="none" url="../contact/contact" open-type="redirect">
+        <text class="cuIcon-discoverfill text-green"></text>
+        <text class="text-grey">联系我们</text>
+      </navigator>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <navigator class="content" hover-class="none" url="../history/history" open-type="redirect">
+        <text class="cuIcon-tagfill text-orange"></text>
+        <text class="text-grey">历史生成</text>
+      </navigator>
+    </view>
+    <view s-if="{{hasUserInfo}}"class="cu-card article {{isCard?'no-card':''}}">
+        <view class="cu-bar  margin-top">
+            <view class="action">
+                <text class="cuIcon-title text-blue"></text>点击下载上一次生成的离婚协议
+            </view>
+        </view>
+        <view class="cu-item shadow">
+            <view  bindtap="downloadFile"  class="content margin-top">
+                <image src="../../images/test1.png" mode="aspectFill"></image>
+                <view class="desc">
+                    <view class="text-content">生成时间：2020年12月1日PM8:21</view>
+                <view>
+                <view class="cu-tag bg-green light sm round">已生成</view>
+            </view>
+        </view>
+    </view>
+  </view>
+</view>
+</view>

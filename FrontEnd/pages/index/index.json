@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "sc-button": "/components/scui/components/scButton/sc-button"
+    }
+}

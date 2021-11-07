@@ -1,0 +1,138 @@
+<!-- 进度条实现 -->
+<block s-if="index==1">
+<progress class="progress" percent="14" border-radius="90" stroke-width="10" active></progress>
+</block>
+
+<block s-if="index==2">
+<progress class="progress" percent="30" border-radius="90" stroke-width="10" active></progress>
+</block>
+
+<block s-if="index==3">
+<progress class="progress" percent="42" border-radius="90" stroke-width="10" active></progress>
+</block>
+
+<block s-if="index==4">
+<progress class="progress" percent="56" border-radius="90" stroke-width="10" active></progress>
+</block>
+
+<block s-if="index==5">
+<progress class="progress" percent="70" border-radius="90" stroke-width="10" active></progress>
+</block>
+
+<block s-if="index==6">
+<progress class="progress" percent="84" border-radius="90" stroke-width="10" active></progress>
+</block>
+
+<block s-if="index==7">
+<progress class="progress" percent="100" border-radius="90" stroke-width="10" active></progress>
+</block>
+
+
+<!-- 第一个问题 -->
+<view class="wrap margin-top">
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view hidden="{{index==1 ? false : true}}">
+
+        <view class="card-area">
+            <view class="top-description border-bottom">{{questionnaire.formPicker1}}</view>
+             <radio-group bindchange="judgeFemale" name="gender">
+                <radio class="block" value=1  checked='false' value=0 checked>先生</radio>
+                <radio class="block" value=1  checked='false'>女士</radio>
+            </radio-group>
+        </view>
+        <button type="primary" bindtap="indexPlus">下一题</button>
+        <button type="primary" bindtap="indexMinus">上一题</button>
+        <button type="default" formType="reset" bindtap="resetUpload">重新填写</button>
+    </view>
+
+    <view hidden="{{index==2 ? false : true}}">
+        <view class="card-area">
+            <view class="top-description border-bottom">{{questionnaire.formPicker2}}</view>
+            <view class="block-area">
+            <radio-group bindchange="judgeFemale" name="gender">
+                <input name="childNum"  bindinput="bindKeyChildInput" class="normalInput" maxlength="2" />
+            </radio-group>
+            </view>
+        </view>
+        <button type="primary" bindtap="indexPlus">下一题</button>
+        <button type="primary" bindtap="indexMinus">上一题</button>
+        <button type="default" formType="reset" bindtap="resetUpload">重新填写</button>
+    </view>
+
+    <view hidden="{{index==3 ? false : true}}">
+        <view class="card-area">
+            <view class="top-description border-bottom">{{questionnaire.formPicker3}}</view>
+             <radio-group bindchange="judgeFemale" name="gender">
+                <radio class="block" value=1  checked='false'>睡眠不规律</radio>
+                <radio class="block" value=1  checked='false'>抽烟</radio></radio>
+                <radio class="block" value=1  checked='false'>喝酒</radio>
+                <radio class="block" value=1  checked='false'>较少运动</radio>
+            </radio-group>
+        </view>
+        <!-- <todo>渲染n次孩子</todo> -->
+        <button type="primary" bindtap="indexPlus">下一题</button>
+        <button type="primary" bindtap="indexMinus">上一题</button>
+        <button type="default" formType="reset" bindtap="resetUpload">重新填写</button>
+    </view>
+
+
+    <view hidden="{{index==4 ? false : true}}">
+        <view class="card-area">
+            <view class="top-description border-bottom">{{questionnaire.formPicker4}}</view>
+             <radio-group bindchange="judgeFemale" name="gender">
+                <radio class="block" value=1  checked='false' value=0 checked>商务应酬较多</radio>
+                <radio class="block" value=1  checked='false'>工作长时间久坐不动</radio>
+                <radio class="block" value=1  checked='false'>加班较多</radio></radio>
+                <radio class="block" value=1  checked='false'>体力劳动较多</radio>
+            </radio-group>
+        </view>
+        <!-- <todo>渲染n次孩子</todo> -->
+        <button type="primary" bindtap="indexPlus">下一题</button>
+        <button type="primary" bindtap="indexMinus">上一题</button>
+        <button type="default" formType="reset" bindtap="resetUpload">重新填写</button>
+    </view>
+
+
+    <view hidden="{{index==5 ? false : true}}">
+        <view class="card-area">
+            <view class="top-description border-bottom">{{questionnaire.formPicker5}}</view>
+             <radio-group bindchange="judgeFemale" name="gender">
+                <radio class="block" value=1  checked='false' value=0 checked>开车</radio>
+                <radio class="block" value=1  checked='false'>步行</radio>
+                <radio class="block" value=1  checked='false'>飞机</radio></radio>
+            </radio-group>
+        </view>
+        <!-- <todo>渲染n次孩子</todo> -->
+        <button type="primary" bindtap="indexPlus">下一题</button>
+        <button type="primary" bindtap="indexMinus">上一题</button>
+        <button type="default" formType="reset" bindtap="resetUpload">重新填写</button>
+    </view>
+
+
+    <view hidden="{{index==6 ? false : true}}">
+        <view class="card-area">
+            <view class="top-description border-bottom">{{questionnaire.formPicker6}}</view>
+                <input name="childNum"  bindinput="bindKeyChildInput" class="normalInput" placeholder="在这里输入，单位为万。" maxlength="2" />
+        </view>
+        <!-- <todo>渲染n次孩子</todo> -->
+        <button type="primary" bindtap="indexPlus">下一题</button>
+        <button type="primary" bindtap="indexMinus">上一题</button>
+        <button type="default" formType="reset" bindtap="resetUpload">重新填写</button>
+    </view>
+
+    <view hidden="{{index==7 ? false : true}}">
+        <view class="card-area">
+            <view class="top-description border-bottom">{{questionnaire.formPicker7}}</view>
+             <radio-group bindchange="judgeFemale" name="gender">
+                <radio class="block" value=1  checked='false' value=0 checked>有</radio>
+                <radio class="block" value=1  checked='false'>无</radio>
+            </radio-group>
+        </view>
+        <button type="primary" bindtap="formSubmit">提交</button>
+        <button type="primary" bindtap="indexMinus">上一题</button>
+        <button type="default" formType="reset" bindtap="resetUpload">重新填写</button>
+    </view>
+
+</form>
+</view>
+

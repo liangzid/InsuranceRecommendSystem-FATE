@@ -1,0 +1,42 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/upload/upload",
+        "pages/standard/standard",
+        "pages/success/success",
+        "pages/center/center",
+        "pages/simple/simple",
+        "pages/contact/contact",
+        "pages/history/history",
+        "pages/success2/success2",
+        "pages/success3/success3",
+        "pages/final/final"
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6F6F6",
+        "navigationBarTitleText": "智能保险经纪人",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/main.png",
+                "selectedIconPath": "images/main_select.png",
+                "selectedColor": "#000000"
+            },
+            {
+                "pagePath": "pages/center/center",
+                "text": "个人中心",
+                "iconPath": "images/center.png",
+                "selectedIconPath": "images/center_select.png",
+                "selectedColor": "#000000"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}

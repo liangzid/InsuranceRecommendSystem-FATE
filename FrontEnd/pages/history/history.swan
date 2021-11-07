@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="cu-card article {{isCard?'no-card':''}}">
+        <view class="cu-bar  margin-top">
+        <view class="action">
+        <text class="cuIcon-title text-blue"></text>该功能还在开发中...
+        </view>
+        </view>
+    <view class="cu-item shadow">
+    <view  bindtap="downloadFile"  class="content margin-top">
+      <image src="../../images/test1.png" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content">生成时间：2020年12月1日PM8:21</view>
+        <view>
+          <view class="cu-tag bg-green light sm round">已生成</view>
+        </view>
+      </view>
+    </view>
+</view>

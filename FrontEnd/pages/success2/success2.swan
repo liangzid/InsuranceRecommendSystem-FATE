@@ -1,0 +1,44 @@
+
+
+<view class="gradual">
+
+<view class="warp" bindtouchmove="touchmove" bindtouchstart="touchstart" bindtouchend="touchend">
+<view>
+    <view class="card-area">
+        <view class="userinfo">
+            <view class="padding flex flex-wrap justify-between align-center bg-white">
+            <!-- <button class="cu-btn round" s-if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+            <view s-else class="userinfo-message">
+                <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+                <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
+                <table border=0 cellspacing=0 cellpadding=0 style="width:100%">
+                <tr><td><image src="../../images/fx1.png",class='fx_background',mode='aspectFit'></image></td><td>
+                <image src="../../images/fx2.png",class='fx_background2',mode='aspectFit'></image>
+                </table>
+            </view>
+        </view>
+    </view>
+</view>
+    <view class="cu-list menu {{menuBorder?'sm-border':''}}  {{menuCard?'card-menu margin-top':''}}">
+       <view class="cu-item {{menuArrow?'arrow':''}}">
+      <navigator class="content" hover-class="none" url="../contact/contact" open-type="redirect">
+        <text class="cuIcon-discoverfill text-green"></text>
+        <text class="text-grey">保险推荐</text>
+      </navigator>
+    </view>
+    <view s-for="{{index_ar}}" s-for_index='index' class='swiper-container'>
+    <!-- <view>{{index}}</view> -->
+        <view class="item-container" style="z-index:{{indexArray[index]}}">
+            <view class="item{{index}} item-common" animation="{{animation[index]}}" bindtap="tapItemFn" data-text="{{textArray[index]}}">
+                <image class="background" src="{{imgArray[index]}}" mode='aspectFit'></image>
+                <text class="item-text">{{textArray[index]}}</text>
+            </view>
+        </view>
+    </view>
+    </view>
+
+    </view>
+  <!-- <button bindtap="tapLeft" style="position:absolute;top:0;left:20rpx">往左滑</button>
+  <button bindtap="tapRight" style="position:absolute;top:0;right:20rpx">往右滑</button> -->
+</view>
+</view>

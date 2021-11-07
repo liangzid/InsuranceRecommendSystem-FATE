@@ -1,0 +1,10 @@
+<view class="main" style="min-height:{{winHeight}}rpx;">
+    <view class="wrap">
+        <view class="card-area">
+            <view class="main-text1">
+                <text>您的离婚协议已生成完毕，点击按钮立即获取。</text>
+            </view>
+            <button bindtap="downloadFile" type="primary">立即获取</button>
+        </view>
+    </view>
+</view>

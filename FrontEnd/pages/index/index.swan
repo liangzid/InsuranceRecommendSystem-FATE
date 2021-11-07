@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<view class="wrap">
+
+    <!-- <view class="main-text1">
+        <text>{{main_info.title}}</text>
+    </view> -->
+    <!-- <view class="main-mintext1">
+        <text>{{main_info.min_title}}</text>
+    </view> -->
+
+    <!-- <view class="card-area">
+        <view class="swiper-wrap">
+            <swiper
+                class="swiper-custom"
+                autoplay="auto"
+                interval="3000"
+                duration="500"
+                current="{{swiperCurrent}}"
+                bindchange="swiperChangeCustom">
+                <swiper-item s-for="{{slider}}">
+                    <image class="swiper-img" src="{{item.imageUrl}}"></image>
+                </swiper-item>
+            </swiper>
+            <view class="dots">
+                <view s-for="{{slider}}" class="dot {{index == swiperCurrent ? ' active' : ''}}"></view>
+            </view>
+        </view>
+    </view> -->
+
+    <!-- <view class="cu-bar  margin-top">
+        <view class="action">
+            <text class="cuIcon-title text-blue"></text>离婚协议模板选择
+        </view>
+    </view> -->
+    <!-- <view class="cu-bar margin-top">
+        <view class="padding-xl radius shadow-warp bg-white shadow-blur margin-left" bindtap="simple" >
+            <text class="cuIcon-text lg text-blue"></text>
+            <text class="text-black text-center"  >{{btn_name}}</text>
+        </view>
+        <view class="padding-xl radius shadow-warp bg-white shadow-blur margin-right margin-left" bindtap="standard" >
+            <text class="cuIcon-text lg text-blue"></text>
+            <text class="text-black text-center"  >{{btn_name2}}</text>
+        </view></view>
+    </view> -->
+    <!-- <view class="cu-bar">
+        <view class="action">
+            <text class="cuIcon-title text-green"></text>离婚协议智能生成
+        </view>
+    </view> -->
+    <!-- <view class="main-mintext1">
+        <text>{{main_info.min_title}}</text>
+    </view> -->
+    <image mode='aspectFit' style="margin:-100rpx 0rpx 500rpx 45rpx; width:350px; height: 711px;" margin-right='0px' src="../../images/fontpage1.png"></image>
+    <sc-button fab size="large" sc-class="sc-btn box-shadow-9 create-btn bg-gradual-blue" style="display:inline-block;text-align:left;" bindtap="addForm">
+        <text class="iconfont icon-add" style="color: white; font-size: 130rpx"></text>
+    </sc-button>
+</view>
+
+
