@@ -1,0 +1,1 @@
+{"file": "/home/szhang/liangzi_need_smile/fatee/isr//BackEnd/data.nlf_training_data.pk", "id_delimiter": ",", "head": 1, "partition": 4, "work_mode": 0, "backend": 0, "storage_engine": "PATH", "namespace": "experiment", "table_name": "recommend_matrix", "use_local_data": 0}
